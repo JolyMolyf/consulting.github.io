@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>turqConsulting</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+  <meta charset="UTF-8">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-wrapper">
+        <div class="dimmer">
+          <div id="nav" class="top-nav">
+            <div id="burgers" class="burger-menu">
+              <div id="first-burger" class="burger-line"></div>  
+              <div id="second-burger" class="burger-line"></div>  
+              <div id="third-burger" class="burger-line"></div>  
+            </div>
+            <div class="top-nav-header">+48 692 280 231</div>
+            <div class="top-nav-button">перезвоните мне</div>
+            <div class="pop-up-wrapper">
+              <div class="pop-up-header">Оставьте свои данные</div>
+              <div class="pop-up-sub-header">и мы Вам перезвоним</div>
+              <div class="form-wrapper-pop-up">
+                <input id="name-pop-up" type="text" name="name-and-surname" placeholder="Имя и Фамилия">
+                <input id="phone-pop-up" type="text" name="phone" placeholder="Телефон">
+              </div>
+              <div id="pop-up-submit">Перезвоните мне</div>
+            </div>
+          </div>
+          <div class="top-menu">
+            <p class="logo"><h1>TurQus Consulting</h1></p> 
+            <p class="phone-number">+48 692 280 231</p>
+            <div id="callme" class="call-back">Перезвоните мне</div>
+            <div class="pop-up-desk-wrapper hide">
+              <div class="desk-pop-close">
+                <div class="cross1 cross"></div>
+                <div class="cross2 cross"></div>
+              </div>
+              <div class="desk-pop-up-header">Оставьте свои данные</div>
+              <div class="desk-pop-up-sub-header">и мы Вам перезвоним</div>
+              <div class="desk-form-wrapper-pop-up">
+                <input id="desk-name-pop-up" type="text" name="name-and-surname" placeholder="Имя и Фамилия">
+                <input id="desk-phone-pop-up" type="text" name="phone" placeholder="Телефон">
+              </div>
+              <div id="desk-pop-up-submit">Перезвоните мне</div>
+            </div>
+          </div>
+          <div class="header-content-wrapper">
+            <div class="descr">Пройдите небольшой опрос и узнайте:</div>
+            <br>
+            <br>
+            <div class="header-anounce">Как получить Карту Побыта в кратчайшие сроки в 2020</div>
+            <div class="header-button">Узнать как получить карту побыту</div>
+            <div class="header-gift">+ Подарок инструкция как получить номер PESEL и прописку</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="second">
+      <div class="second-wrapper">
+        <div class="second-header">Почему мы?</div>
+        <div class="flex-wrapper">
+          <div class="flex-wrapper-item">
+            <div class="flex-wrapper-item-text"><h1>Полная юридическая поддержка </h1><br>
+          Наши юристы имеют опыт более 11 лет и будут сопровождать Вас на протяжении всего процесса
+          </div>
+          <div class="flex-wrapper-item-text-icon">
+            <img 
+            src="src/imgs/Tilda_Icons_32_profession_lawyer.png">
+          </div>
+          </div>
+          <div class="flex-wrapper-item">
+            <div class="flex-wrapper-item-text"><h1>Оплата частями за результат </h1><br>
+          Вы вносите половину стоимости в качестве предоплаты и остальную часть по факту получения документов
+          </div>
+          <div class="flex-wrapper-item-text-icon">
+            <img 
+            src="src/imgs/arm.png">
+          </div>
+          </div>
+          <div class="flex-wrapper-item">
+            <div class="flex-wrapper-item-text"><h1>Гарантия возврата денег</h1><br>
+          Мы возвращаем полную сумму предоплаты в случае отказа в получении документов
+          </div>
+          <div class="flex-wrapper-item-text-icon">
+            <img 
+            src="src/imgs/25fn_transfer.png">
+          </div>
+          </div>
+          <div class="flex-wrapper-item">
+            <div class="flex-wrapper-item-text"><h1>
+          Бесплатная консультация</h1><br>
+          Наши юристы проведут с Вами консультацию абсолютно бесплатно.
+          </div>
+          <div class="flex-wrapper-item-text-icon">
+            <img 
+            src="src/imgs/dollar.png">
+          </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section class="third">
+      <div class="service-wrapper"> 
+        <div class="service-header"><h1>Наши услуги</h1></div>
+        <div class="service-flex-wrapper">
+          <div class="service-flex-item">
+            <div class="service-item-icon"><img src="src/imgs/icon1.png"></div>
+            <div class="service-item-text">
+              <div class="item-header"><h1 class="item-header-text">Оформление карты побыта</h1></div>
+            <p class="service-description" >Наши юристы помогут вам в получении карты временного и сталого побыта</p>
+              <br>
+            </div>
+            <div class="service-btn-wrapper">
+              <div class="service-btn-more">Подробнее</div>
+        
+            <form method="POST" action="https://secure.payu.com/api/v2_1/orders">
+                <input type="hidden" name="customerIp" value="123.123.123.123">
+                <input type="hidden" name="merchantPosId" value="145227">
+                <input type="hidden" name="description" value="Opis zamówienia">
+                <input type="hidden" name="totalAmount" value="1000">
+                <input type="hidden" name="currencyCode" value="PLN">
+                <input type="hidden" name="products[0].name" value="Produkt 1">
+                <input type="hidden" name="products[0].unitPrice" value="1000">
+                <input type="hidden" name="products[0].quantity" value="1">
+                <input type="hidden" name="notifyUrl" value="http://shop.url/notify">
+                <input type="hidden" name="continueUrl" value="http://shop.url/continue">
+                <input type="hidden" name="OpenPayu-Signature" type="hidden" value="sender=145227;algorithm=SHA-256;signature=565f9f4dda43c8e24ccab4472133d680e2aa58e1f58bea845c4cf2926965144d">
+                <button class="service-btn-pay" type="submit" formtarget="_blank">Оплатить | 120zl</button>
+            </form>
+            </div>
+          </div>
+          <div class="service-flex-item">
+            <div class="service-item-icon"><img src="src/imgs/icon2.png"></div>
+            <div class="service-item-text">
+              <div class="item-header"><h1 class="item-header-text">Оформление карты поляка</h1></div>
+              <p class="service-description">Помогаем получить карту поляка на основании происхождения<p>
+            </div>
+            <div class="service-btn-wrapper">
+              <div class="service-btn-more">Подробнее</div>
+              <form method="POST" action="https://secure.payu.com/api/v2_1/orders">
+                <input type="hidden" name="customerIp" value="123.123.123.123">
+                <input type="hidden" name="merchantPosId" value="145227">
+                <input type="hidden" name="description" value="Opis zamówienia">
+                <input type="hidden" name="totalAmount" value="1000">
+                <input type="hidden" name="currencyCode" value="PLN">
+                <input type="hidden" name="products[0].name" value="Produkt 1">
+                <input type="hidden" name="products[0].unitPrice" value="1000">
+                <input type="hidden" name="products[0].quantity" value="1">
+                <input type="hidden" name="notifyUrl" value="http://shop.url/notify">
+                <input type="hidden" name="continueUrl" value="http://shop.url/continue">
+                <input type="hidden" name="OpenPayu-Signature" type="hidden" value="sender=145227;algorithm=SHA-256;signature=565f9f4dda43c8e24ccab4472133d680e2aa58e1f58bea845c4cf2926965144d">
+                <button class="service-btn-pay" type="submit" formtarget="_blank">Оплатить | 140zl</button>
+            </form>
+            </div>
+          </div>
+          <div class="service-flex-item">
+            <div class="service-item-icon"><img src="src/imgs/icon3.png"></div>
+            <div class="service-item-text">
+              <div class="item-header"><h1 class="item-header-text">Помощь в регистрация фирмы</h1></div>
+          <p class="service-description">помощь в открытии фирмы.</p>
+            </div>
+            <div class="service-btn-wrapper">
+              <div class="service-btn-more">Подробнее</div>
+              <form method="POST" action="https://secure.payu.com/api/v2_1/orders">
+                <input type="hidden" name="customerIp" value="123.123.123.123">
+                <input type="hidden" name="merchantPosId" value="145227">
+                <input type="hidden" name="description" value="Opis zamówienia">
+                <input type="hidden" name="totalAmount" value="1000">
+                <input type="hidden" name="currencyCode" value="PLN">
+                <input type="hidden" name="products[0].name" value="Produkt 1">
+                <input type="hidden" name="products[0].unitPrice" value="1000">
+                <input type="hidden" name="products[0].quantity" value="1">
+                <input type="hidden" name="notifyUrl" value="http://shop.url/notify">
+                <input type="hidden" name="continueUrl" value="http://shop.url/continue">
+                <input type="hidden" name="OpenPayu-Signature" type="hidden" value="sender=145227;algorithm=SHA-256;signature=565f9f4dda43c8e24ccab4472133d680e2aa58e1f58bea845c4cf2926965144d">
+                <button class="service-btn-pay" type="submit" formtarget="_blank">Оплатить | 90zl</button>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="quiz">
+      <div class="quiz-header"><h1>Пройдите небольшой опрос и узнайте:</h1>
+        <br><h2 class="quiz-sub-header">Как получить Карту Побыта в кратчайшие 
+            сроки в 2020</h2>
+      </div>
+      <div class="quiz-wrapper">
+        <div class="quiz-wrapper-header">
+            <div class="quiz-text">Пожалуйста, ответьте на вопросы</div>
+          <div class="progress-bar-tint">
+            <div id="quiz-progress"></div>
+
+          </div>
+        </div>
+        <div id="question-wrapper">
+          <div id="question-header">Заголовок</div>
+          <div id="quiestion-choice">
+            <input class="choice" type="radio" id="choice1" name="gender" value="male">
+          <label  class="choiceLbl" id="choice1lbl"  for="choice1">txt1 </label><br>
+
+            <input class="choice" type="radio" id="choice2" name="gender" value="male">
+          <label class="choiceLbl" id="choice2lbl" for="choice2">txt2 </label><br>
+
+            <input class="choice" type="radio" id="choice3" name="gender" value="male">
+            <label class="choiceLbl" id="choice3lbl"  for="choice3">txt 3</label><br>
+            <input class="choice" type="radio" id="choice4" name="gender" value="male">
+          <label class="choiceLbl" id="choice4lbl"  for="choice4">txt 4</label><br>
+          </div>
+          <div id="question-text">
+                <input type="text" id="text-in" name="gender" value="">
+          </div>
+          <div class="form-wrapper">
+            
+            <input class="sendForm" placeholder="Name" type="text" id="name" name="">
+            <br>
+        
+            <input class="sendForm" placeholder="email" type="text" id="surname" name="">
+            
+          </div>
+          <div class="buttons-wrapper">
+            <div id="prev" ><p class="prev-content">Назад</p></div>
+            <div id="next" ><p class="next-content">Вперед</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="path">
+          <!-- <div class="line"></div> -->
+      <div class="path-wrapper">
+        <div class="path-header"><h1>Этапы сотрудничиства</h1></div>
+        <div class="steps-wrapper">
+    
+          <div class="step">
+            <div class="step-visual-wrapper">
+              <div class="step-icon"><img src="src/imgs/step55.png"></div>
+              <div class="step-description">
+                <div class="step-header">Заявка</div>
+                   <div class="number">1</div>    
+                <div class="step-text">Вы оставляете заявку, мы Вам перезваниваем, проводим бесплатную консультацию и оценку шансов на получение</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-visual-wrapper">
+              <div class="step-icon"><img src="src/imgs/step1.png"></div>
+              <div class="step-description">
+                <div class="step-header">Подписание договора</div>
+                   <div class="number">2</div>    
+                <div class="step-text">Вы оставляете заявку, мы Вам перезваниваем, проводим бесплатную консультацию и оценку шансов на получение</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="step">
+            <div class="step-visual-wrapper">
+              <div class="step-icon"><img src="src/imgs/step2.png"></div>
+              <div class="step-description">
+                <div class="step-header">Подача документов</div>
+                   <div class="number">3</div>    
+                <div class="step-text">Вы оставляете заявку, мы Вам перезваниваем, проводим бесплатную консультацию и оценку шансов на получение</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step">
+            <div class="step-visual-wrapper">
+              <div class="step-icon"><img src="src/imgs/step3.png"></div>
+              <div class="step-description">
+                <div class="step-header">Получение документов </div>
+                   <div class="number">4</div>    
+                <div class="step-text">Вы оставляете заявку, мы Вам перезваниваем, проводим бесплатную консультацию и оценку шансов на получение</div>
+              </div>
+            </div>
+        </div>
+
+         <div class="step">
+            <div class="step-visual-wrapper">
+              <div class="step-icon"><img src="src/imgs/step4.png"></div>
+              <div class="step-description">
+                <div class="step-header">Оплата</div>
+                   <div class="number">5</div>    
+                <div class="step-text">Вы оставляете заявку, мы Вам перезваниваем, проводим бесплатную консультацию и оценку шансов на получение</div>
+              </div>
+            </div>
+        </div>
+
+      </div>
+    </section>
+    <footer>
+        <div class="contacts">
+            <div class="footer-header">Контакты</div>
+            <div class="footer-phone">+48 692 280 231 </div>
+            <div class="footer-mail">turqusconsulting@gmail.com</div>
+            <div class="footer-header">Адресс</div>
+            <div class="footer-phone">Turqus Legal Consulting</div>
+            <div class="footer-mail">Ul. Biała 4/20A</div>
+            <div class="footer-mail">00-890 Warszawa </div>
+            <div class="footer-terms-of-use"><a href="https://www.termsofusegenerator.net/live.php?token=rPYOEwzhtD7YVzayh1PTO8hvVbZl2RU1">Terms of Use</a></div>
+
+
+        </div>
+    </footer>
+  </div>
+
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js"></script>
+  <script type="text/javascript" src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript" src="src/js/game.js"></script>
+  <script type="text/javascript" src="src/js/index.js"></script>
+</body>
+</html>
